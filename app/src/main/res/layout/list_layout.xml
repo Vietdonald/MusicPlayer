@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frg_news_color">
+
+    <LinearLayout
+        android:id="@+id/dialog_group_titile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="@dimen/padding_8"
+        android:background="#9066AA"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dialog_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back"
+            android:background="@null"/>
+        <TextView
+            android:id="@+id/dialog_titile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:textSize="@dimen/textSize_20"
+            android:textColor="@color/white"
+            android:text="Tiltle"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_listsong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_group_titile"
+        android:layout_above="@+id/play_music_mini"
+        android:layout_margin="@dimen/margin_8"/>
+
+    <LinearLayout
+        android:id="@+id/play_music_mini"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="#8960A5"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_4">
+
+        <ImageView
+            android:id="@+id/icon_music_mini"
+            android:layout_width="@dimen/width_40"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_cd" />
+
+        <TextView
+            android:id="@+id/song_name_mini"
+            android:layout_width="@dimen/width_160"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:singleLine="true"
+            android:text="Đào nương"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16" />
+
+        <RelativeLayout
+            android:id="@+id/ctrl_play_music_mini"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_prev_mini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/btn_play_pause_mini"
+                android:background="@null"
+                android:src="@drawable/icon_previous" />
+
+            <ImageButton
+                android:id="@+id/btn_play_pause_mini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/btn_next_mini"
+                android:background="@null"
+                android:src="@drawable/icon_play" />
+
+            <ImageButton
+                android:id="@+id/btn_next_mini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/icon_next" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

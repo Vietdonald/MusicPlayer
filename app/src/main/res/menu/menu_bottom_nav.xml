@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_offline"
+        android:title="@string/action_offline"
+        android:icon="@drawable/ic_offline"/>
+
+    <item android:id="@+id/action_online"
+        android:title="@string/action_online"
+        android:icon="@drawable/ic_online"/>
+
+    <item android:id="@+id/action_notify"
+        android:title="@string/action_notify"
+        android:icon="@drawable/ic_notify"/>
+
+</menu>

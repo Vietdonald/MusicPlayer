@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OnlineFragment"
+    android:background="@color/frg_news_color"
+    android:padding="@dimen/padding_16"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/textSize_20"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="Chưa có nguồn tin phù hợp" />
+
+</LinearLayout>

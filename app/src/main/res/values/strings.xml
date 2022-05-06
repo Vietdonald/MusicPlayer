@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="action_online">Nhạc online</string>
+    <string name="action_offline">Cá nhân</string>
+    <string name="action_notify">Thông báo</string>
+    <string name="toolBar_title">Music</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
